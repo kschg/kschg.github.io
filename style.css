@@ -231,6 +231,7 @@ ul {
 .teams__team {
     display: flex;
     margin: 32px 0;
+    justify-content: center;
 }
 
 .team__profile {
@@ -249,7 +250,7 @@ ul {
 
 .team__name span {
     color: var(--color-grey);
-    font-size: var(--font-medium);
+    font-size: var(--font-regular);
 }
 
 #research {
