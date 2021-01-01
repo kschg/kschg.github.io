@@ -132,9 +132,25 @@ a {
     font-weight: var(--weight-bold);
 }
 
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 ul {
     padding-left: 0;
     list-style: none;
+}
+
+.navbar__toggle-btn {
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+    top: 24px;
 }
 
 #home {
@@ -305,6 +321,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
     .about__stats {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -317,5 +336,15 @@ ul {
     }
     .project {
         flex-direction: column;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
     }
 }
