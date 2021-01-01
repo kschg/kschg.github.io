@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofrware</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfbc1ab4a5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--defer : html과 다운로드를 같이 하지만 html 파싱이 끝난 다음 실행-->
+    <script src="main.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-uncharted"></i>
+            <a href="#">Software</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Teams</li>
+            <li class="navbar__menu__item">Research</li>
+            <li class="navbar__menu__item">Contact</li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home__title">
+            <h1>Software Lab :)</h1>
+            <h3>Freestyle Development</h3>
+        </div>
+        <div class="home__description">
+            <div class="home__description__title">
+                <p>Can you contact us?</p>
+                <p>Click to Github!</p>
+            </div>
+            <div class="home__description__icon">
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section__container">
+            <h1>About</h1>
+            <div class="about__description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <div class="about__stats">
+                <div class="stats">
+                    <div class="stats__title">
+                        <p>~~대회</p>
+                    </div>
+                    <div class="stats__chart">
+
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stats__title">
+                        <p>~~대회</p>
+                    </div>
+                    <div class="stats__chart">
+
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stats__title">
+                        <p>~~대회</p>
+                    </div>
+                    <div class="stats__chart">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro__teams" class="section">
+        <div class="section__container">
+            <h1>Teams</h1>
+            <div class="teams">
+                <div class="teams__team">
+                    <img src="images/profile.jpg" alt="No Image!" class="team__profile" />
+                    <div class=" team__description ">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        <div class="team__name">
+                            <span>tuuna/23/소프트웨어학과</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="teams__team ">
+                    <img src="images/profile.jpg" alt="No Image!" class="team__profile" />
+                    <div class="team__description ">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        <div class="team__name">
+                            <span>tuuna/23/소프트웨어학과</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="teams__team ">
+                    <img src="images/profile.jpg" alt="No Image!" class="team__profile" />
+                    <div class="team__description ">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                            many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        <div class="team__name">
+                            <span>tuuna/23/소프트웨어학과</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="section__container">
+            <h1>Research</h1>
+            <h3>소프트웨어 랩실에서 진행한 연구 목록입니다.</h3>
+            <div class="research__projects">
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+                <a href="#" class="project">
+                    <img src="images/profile.jpg" alt="No Image!" class="project__image" />
+                    <!--아래 div가 이미지에 겹쳐서 하고 싶다면 아래 div를 absolute로 해야하고 부모 컨테이너를 relative로 해야 된다.-->
+                    <div class="project__description">
+                        <h3>Test Project</h3>
+                        <p>test project description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="etc ">
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+/* Global */
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+    --color-navy: #34354B;
+    /* Font Size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+    /* Size */
+    --size-bolder-radius: 4px;
+    /* Animation */
+    --animation-duration: 300ms;
+}
+
+
+/*box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성입니다.*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+}
+
+
+/* Typography */
+
+
+/* Margin 같은 경우 2개를 쓰면 위아래 + 양옆 
+       4개로 쓰게 되면 위 오른쪽 아래쪽 왼쪽(시계방향) 
+    */
+
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-orange);
+    margin: 16px 0;
+}
+
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+/* Section common */
+
+.section {
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    /*한쪽에만 마진이 들어간 경우 골구루 뿌려주기 위해*/
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__menu__item {
+    list-style: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0px 4px;
+    transition: all var(--animation-duration) ease;
+}
+
+.navbar__menu__item:hover {
+    background-color: var(--color-orange);
+    border-radius: var(--size-bolder-radius);
+}
+
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-bold);
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#home {
+    text-align: center;
+}
+
+.home__title {
+    margin: 48px;
+}
+
+.home__title h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-dark-pink);
+}
+
+.home__description {
+    display: flex;
+    justify-content: center;
+}
+
+.home__description__title {
+    margin: 8px;
+    position: relative;
+    top: 6px;
+}
+
+.home__description__title p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+}
+
+.home__description__icon {
+    margin: 8px;
+    font-size: 56px;
+    color: var(--color-blue);
+    transition: all var(--animation-duration) ease;
+}
+
+.home__description__icon:hover {
+    color: var(--color-dark-pink);
+    transform: scale(1.2);
+}
+
+.about__description {
+    margin: 32px 0;
+}
+
+.about__description p {
+    line-height: 200%;
+}
+
+.about__stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.stats__chart {
+    margin: 0px 16px;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    border: 1px solid var(--color-blue);
+    margin: auto;
+    border-radius: 50%;
+}
+
+#intro__teams {
+    text-align: center;
+}
+
+.teams {
+    margin: 40px;
+}
+
+.teams__team {
+    display: flex;
+    margin: 32px 0;
+}
+
+.team__profile {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin: 0 12px;
+}
+
+.team__description {
+    padding: 18px;
+    border-radius: 20px;
+    background-color: var(--color-yellow);
+}
+
+.team__name span {
+    color: var(--color-grey);
+    font-size: var(--font-medium);
+}
+
+#research {
+    text-align: center;
+}
+
+#research h3 {
+    font-size: var(--font-medium);
+    font-weight: var(--font-regular);
+}
+
+.research__projects {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    margin: 24px;
+}
+
+.project__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    top: 0;
+    left: 0;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all var(--animation-duration) ease;
+}
+
+.project__description:hover {
+    transform: translateY(0px);
+    opacity: 0.8;
+}
+
+.project__description h3,
+.project__description p {
+    color: var(--color-white);
+    margin: 0;
+}
+
+.project__description h3:after {
+    content: "";
+    display: block;
+    left: 50%;
+    width: 25px;
+    height: 2px;
+    text-align: center;
+    position: relative;
+    margin-left: -12px;
+    background-color: var(--color-white);
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__stats {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .stats__chart {
+        margin: 12px auto;
+    }
+    .stats {
+        margin-bottom: 32px;
+    }
+    .project {
+        flex-direction: column;
+    }
+}
